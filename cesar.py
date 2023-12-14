@@ -1,5 +1,7 @@
 import string
 
+string.printable = string.printable.replace("/r","a")
+
 def cesar_ciffer(message, key):
 	if type(key) != int :
 		print("la clef doit être un entier")
